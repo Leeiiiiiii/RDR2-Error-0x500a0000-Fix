@@ -2,6 +2,10 @@
 
 rem This batch script helps fix "ERROR 0x500a0000" in Red Dead Redemption 2.
 
+@echo off
+
+rem This batch script helps fix "ERROR 0x500a0000" in Red Dead Redemption 2.
+
 set "game_folder=D:\SteamLibrary\steamapps\common\Red Dead Redemption 2\"
 
 set "file1=ScriptHookRDR2.dll"
@@ -10,22 +14,21 @@ set "file2=dinput8.dll"
 if exist "%game_folder%%file1%" (
     ren "%game_folder%%file1%" "%file1:.dll=.txt%"
     echo %file1% has been renamed to %file1:.dll=.txt%.
-    echo You can now play Red Dead with mods!
+    echo You can now play Red Dead Online!
 ) else if exist "%game_folder%%file1:.dll=.txt%" (
     ren "%game_folder%%file1:.dll=.txt%" "%file1%"
     echo %file1:.dll=.txt% has been renamed back to %file1%.
-    echo You can now play Red Dead Online!
+    echo You can now play Red Dead with mods!
 )
 
 if exist "%game_folder%%file2%" (
     ren "%game_folder%%file2%" "%file2:.dll=.txt%"
     echo %file2% has been renamed to %file2:.dll=.txt%.
-    echo You can now play Red Dead with mods!
+    echo You can now play Red Dead Online!
 ) else if exist "%game_folder%%file2:.dll=.txt%" (
     ren "%game_folder%%file2:.dll=.txt%" "%file2%"
     echo %file2:.dll=.txt% has been renamed back to %file2%.
-    echo You can now play Red Dead Online!
+    echo You can now play Red Dead with mods!
 )
 
 pause
-
