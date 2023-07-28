@@ -1,0 +1,11 @@
+To use this script:
+
+Open a text editor like Notepad.
+
+Copy and paste the above script into the text editor.
+
+Save the file with a .bat extension, for example, "rename_files.bat".
+
+Place the "rename_files.bat" in the same folder where "ScriptHookRDR2.dll" and "dinput8.dll" are located. In this case, that would be "D:\SteamLibrary\steamapps\common\Red Dead Redemption 2".
+
+Double-click the batch file to run it. It will check if the files with .dll or .txt extensions exist in the game folder and perform the renaming accordingly. The script will display messages to inform you about the actions taken.
